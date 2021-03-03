@@ -11,5 +11,10 @@ jobs:
     steps:
     - name: Generate build number
       run: echo ${{github.run_number}}
-
-
+    
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v2
+      with:
+        name: ohana-artifact-${{ github.run_number }}
+        path: gulp-temp/
+        run: ls  
