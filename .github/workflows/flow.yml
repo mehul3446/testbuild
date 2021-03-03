@@ -16,5 +16,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: ohana-artifact-${{ github.run_number }}
-        path: gulp-temp/
+        path: .
         run: ls  
