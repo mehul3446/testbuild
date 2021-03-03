@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Generate build number
-      run: echo $github.run_number
+      run: echo ${{github.run_number}}
 
 
