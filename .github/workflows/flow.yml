@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Generate build number
-      run: echo ${{github.run_number}}
+      run: which psql
     
     - name: 'Upload Artifact'
       uses: actions/upload-artifact@v2
