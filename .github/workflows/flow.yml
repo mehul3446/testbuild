@@ -9,12 +9,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Generate build number
-      run: which psql
+    - name: print runner os
+      run: echo ${{ runner.os }}
     
-    - name: 'Upload Artifact'
-      uses: actions/upload-artifact@v2
-      with:
-        name: ohana-artifact-${{ github.run_number }}
-        path: .
-        run: ls  
+
+
+
+    
+    # - name: 'Upload Artifact'
+    #   uses: actions/upload-artifact@v2
+    #   with:
+    #     name: ohana-artifact-${{ github.run_number }}
+    #     path: .
+    #     run: ls  
